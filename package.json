@@ -1,0 +1,28 @@
+{
+  "name": "parcel-tailwindcss",
+  "version": "1.0.0",
+  "description": "Blazing fast prototyping with Parcel and Tailwind CSS",
+  "author": "Thomas Kim",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/th-km/parcel-tailwind.git"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist ./.cache",
+    "dev": "parcel ./src/index.html --open --no-autoinstall",
+    "prod": "parcel build ./src/index.html --no-source-maps --public-url ./"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@fullhuman/postcss-purgecss": "^2.0.5",
+    "parcel-bundler": "^1.12.4",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.1.4"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "not dead"
+  ]
+}
